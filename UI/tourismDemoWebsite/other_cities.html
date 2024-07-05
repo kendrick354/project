@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stadium Tours in Other Cities</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">[1]
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">[2]</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">[3]</script>
+  <style>
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 50px; 
+    }
+    .image-container figure {
+      width: 100%;
+      margin: 10px 0;
+      text-align: left;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    .image-container figcaption {
+      margin-top: 10px;
+    }
+    .image-container p {
+      margin-top: 10px;
+    }
+    .image-container a {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 6px 12px;
+    }
+    
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .wrapper {
+      min-height: 100%;
+      margin-bottom: -50px;
+    }
+    .wrapper:after {
+      content: "";
+      display: block;
+      height: 50px;
+    }
+    footer, .wrapper:after {
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="home.html">Football Explorer Tours</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stadium Tours <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="London.html">London</a></li>
+                <li><a href="Manchester.html">Manchester</a></li>
+                <li><a href="Birmingham.html">Birmingham</a></li>
+                <li class="active"><a href="other_cities.html">Other cities</a></li>
+              </ul>
+            </li>
+            <li><a href="local_teams.html">local teams</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="fan_experiences.html">Fan Experiences</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <li><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
+            <li><a href="Profile.html"><i class="fa fa-user"></i> Profile</a></li>
+            <li><a href="contact.html"><i class="fa fa-ticket-alt"></i> Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container-fluid text-center">    
+      <div class="row content">
+        <div class="col-sm-8 text-left"> 
+          <h1>Welcome to Stadium Tours in Other Cities</h1>
+          <p>Explore stadiums in other cities and experience the thrill of football.</p>
+          
+          <div class="image-container">
+            <figure>
+              <img src="images/anfield stadium.jpeg" alt="Anfield" class="img-responsive">
+              <figcaption>Anfield</figcaption>
+              <p>Discover Anfield, the historic home of Liverpool Football Club. Take a tour of the stadium, visit the Shankly Statue, and walk down the famous players' tunnel.</p>
+              <a href="https://bookings.liverpoolfc.com/stadiumtours/" class="btn btn-primary" target="_blank">Book Now</a>
+            </figure>
+            
+            <figure>
+              <img src="images/King-power-stadium.jpeg" alt="King Power Stadium" class="img-responsive">
+              <figcaption>King Power Stadium</figcaption>
+              <p>Experience the excitement of King Power Stadium, the home of Leicester City Football Club. Explore the stadium and learn about the club's remarkable journey.</p>
+              <a href="https://tickets.lcfc.com/en-gb/categories/stadium%20tours" class="btn btn-primary" target="_blank">Book Now</a>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>© 2024 Football Explorer Tours. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

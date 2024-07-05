@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Football Culture</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .legendary-footballers {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+    }
+    .legendary-footballers img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: slideshow 30s linear infinite;
+    }
+    .legendary-footballers img:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .legendary-footballers img:nth-child(2) {
+      animation-delay: 10s;
+    }
+    .legendary-footballers img:nth-child(3) {
+      animation-delay: 20s;
+    }
+    @keyframes slideshow {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .wrapper {
+      min-height: 100%;
+      margin-bottom: -50px;
+    }
+    .wrapper:after {
+      content: "";
+      display: block;
+      height: 50px;
+    }
+    footer, .wrapper:after {
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="home.html">Football Explorer Tours</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stadium Tours <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="London.html">London</a></li>
+                <li><a href="Manchester.html">Manchester</a></li>
+                <li><a href="Birmingham.html">Birmingham</a></li>
+                <li><a href="other_cities.html">Other cities</a></li>
+              </ul>
+            </li>
+            <li><a href="local_teams.html">local teams</a></li>
+            <li class="active"><a href="culture.html">Culture</a></li>
+            <li><a href="fan_experiences.html">Fan Experiences</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <li><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
+            <li><a href="Profile.html"><i class="fa fa-user"></i> Profile</a></li>
+            <li><a href="contact.html"><i class="fa fa-ticket-alt"></i> Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <h1>Football Culture</h1>
+      
+      <h2>The History of Football</h2>
+      <p>Football, also known as soccer, is a sport that has been played for centuries. The modern game of football originated in England in the 19th century, but its roots can be traced back to ancient civilizations such as China, Greece, and Rome. Over the years, football has evolved into a global phenomenon, with millions of fans around the world.</p>
+      
+      <h2>Legendary Footballers</h2>
+      <div class="legendary-footballers">
+        <img src="images/Pele.jpeg" alt="Pelé">
+        <img src="images/Maradona.jpeg" alt="Diego Maradona">
+        <img src="images/Messi.jpeg" alt="Lionel Messi">
+      </div>
+      
+      <h2>Live Matches</h2>
+      <p>Experience the thrill of live football matches with our exclusive packages. Join us as we attend some of the most exciting matches in the world.</p>
+      <a href="https://www.livefootballtickets.com" class="btn btn-primary">Watch Live Matches</a>
+      
+      <h2>Coaching Certifications</h2>
+      <p>If you're interested in becoming a football coach, there are several coaching certifications available. Here are some of the most popular ones:</p>
+      
+      <ul>
+        <li>UEFA A License</li>
+        <li>UEFA B License</li>
+        <li>FA Level 1 Coaching Certificate</li>
+        <li>FA Level 2 Coaching Certificate</li>
+        <li>FA Level 3 (UEFA B) Coaching Certificate</li>
+        <li>FA Level 4 (UEFA A) Coaching Certificate</li>
+      </ul>
+      
+      <p>To obtain these certifications, you can visit the <a href="https://learn.englandfootball.com/courses" target="_blank">FA Learning website</a> to find out more about the available coaching courses and how to enroll.</p>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>© 2024 Football Explorer Tours. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
